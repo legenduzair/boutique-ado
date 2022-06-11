@@ -23,7 +23,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = False
 
 ALLOWED_HOSTS = ['boutique-ado-uoomer.herokuapp.com', 'localhost']
 
@@ -45,8 +46,8 @@ INSTALLED_APPS = [
     'products',
     'bag',
     'checkout',
-    'crispy_forms',
     'profiles',
+    'crispy_forms',
     'storages',
 ]
 
